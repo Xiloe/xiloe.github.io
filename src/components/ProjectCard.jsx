@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 export const ProjectCard = ({
   title,
   company,
@@ -31,7 +33,7 @@ export const ProjectCard = ({
 
         <div className="flex [&>*]:mr-2">
           {tags.map((tag, i, tags) => (
-            <p className="text-slate-600" id={tag}>
+            <p key={uuidv4()} className="text-slate-600">
               {tag} {i + 1 === tags.length ? "" : "\u2022"}
             </p>
           ))}

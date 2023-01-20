@@ -1,5 +1,5 @@
 import { Routes, Route, NavLink } from "react-router-dom";
-import Home from "./pages/Home";
+import About from "./pages/About";
 import Projects from "./pages/Projects";
 
 function App() {
@@ -13,15 +13,15 @@ function App() {
               isActive ? "font-bold underline" : "hover:underline"
             }
           >
-            Home
+            Work
           </NavLink>
           <NavLink
-            to="/projects"
+            to="/about"
             className={({ isActive }) =>
               isActive ? "font-bold underline" : "hover:underline"
             }
           >
-            Projects
+            About
           </NavLink>
         </div>
       </nav>
@@ -30,8 +30,8 @@ function App() {
                       h-[calc(100%-theme(space.16))]"
       >
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/" element={<Projects />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </div>

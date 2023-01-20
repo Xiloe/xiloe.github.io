@@ -9,7 +9,7 @@ export default function Projects() {
         location="London, UK"
         description="Making of a website and interactive resume builder for a company that offers resume writing services."
         link="https://cv-minute.fr"
-        tags={["Vue.js", "Node.js", "SQLite", "Git"]}
+        tags={["Vue.js", "Node.js", "SQLite"]}
       />
 
       <ProjectCard
@@ -18,7 +18,7 @@ export default function Projects() {
         location="New York, USA"
         description="Making of a NFT collection and website for a company that offers 'Pay to Earn' NFTs and games."
         link="https://godsofasgardp2e.com"
-        tags={["Solidity", "Hardhat", "Node.js", "React.js", "Git"]}
+        tags={["Solidity", "Hardhat", "Node.js", "React.js"]}
       />
 
       <ProjectCard
